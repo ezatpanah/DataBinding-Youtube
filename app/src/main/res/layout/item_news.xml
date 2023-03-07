@@ -6,7 +6,7 @@
     <data>
         <variable
             name="article"
-            type="com.ezatpanah.databinding_youtube.response.Article" />
+            type="com.ezatpanah.databinding_youtube.response.ResponseTopHeadline.Article" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

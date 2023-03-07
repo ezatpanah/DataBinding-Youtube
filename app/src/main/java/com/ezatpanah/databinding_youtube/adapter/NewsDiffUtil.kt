@@ -1,11 +1,11 @@
 package com.ezatpanah.databinding_youtube.adapter
 
 import androidx.recyclerview.widget.DiffUtil
-import com.ezatpanah.databinding_youtube.response.Article
+import com.ezatpanah.databinding_youtube.response.ResponseTopHeadline
 
 class NewsDiffUtil(
-    private val oldList: List<Article>,
-    private val newList: List<Article>
+    private val oldList: List<ResponseTopHeadline.Article>,
+    private val newList: List<ResponseTopHeadline.Article>
 ) : DiffUtil.Callback() {
 
     override fun getOldListSize(): Int =oldList.size

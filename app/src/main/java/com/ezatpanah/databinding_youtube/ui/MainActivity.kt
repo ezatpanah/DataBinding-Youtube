@@ -38,14 +38,14 @@ class MainActivity : AppCompatActivity() {
         lifecycleScope.launch {
             binding.apply {
                 viewModel.getTopHeadlineNews("us")
-                viewModel.newsList.observe(this@MainActivity) {
-                    when (it.status) {
+                viewModel.newsList.observe(this@MainActivity) { data ->
+                    when (data.status) {
                         DataStatus.Status.LOADING -> {
                             pbLoading.isVisible(true, rvLastNews)
                         }
                         DataStatus.Status.SUCCESS -> {
                             pbLoading.isVisible(false, rvLastNews)
-                            newsAdapter.setData(it.data!!)
+                            newsAdapter.setData(data.data!!)
                             newsAdapter.setOnItemClickListener {
                                 val uri = Uri.parse(it.url)
                                 val intent = Intent(Intent.ACTION_VIEW, uri)
@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
                             }
                         }
                         DataStatus.Status.ERROR -> {
-                            Toast.makeText(this@MainActivity, "Something went wrong!", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@MainActivity, "Something went wrong!", Toast.LENGTH_LONG).show()
                         }
                     }
 
