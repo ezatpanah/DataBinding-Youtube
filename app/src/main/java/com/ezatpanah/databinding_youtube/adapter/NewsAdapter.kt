@@ -36,6 +36,7 @@ class NewsAdapter @Inject constructor() : RecyclerView.Adapter<NewsAdapter.MyVie
             }
         }
     }
+
     private var onItemClickListener: ((ResponseTopHeadline.Article) -> Unit)? = null
 
     fun setOnItemClickListener(listener: (ResponseTopHeadline.Article) -> Unit) {

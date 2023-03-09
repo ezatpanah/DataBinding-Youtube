@@ -4,7 +4,6 @@ import com.ezatpanah.databinding_youtube.api.ApiServices
 import javax.inject.Inject
 
 class ApiRepository @Inject constructor(private val apiServices: ApiServices) {
-
-    suspend fun getTopHeadlineNews(country: String) = apiServices.getTopHeadlineNews(country)
-
+    suspend fun getTopHeadlineNews(country: String) =
+        apiServices.getTopHeadlineNews(country)
 }

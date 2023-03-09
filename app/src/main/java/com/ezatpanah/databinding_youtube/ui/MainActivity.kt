@@ -56,7 +56,6 @@ class MainActivity : AppCompatActivity() {
                             Toast.makeText(this@MainActivity, "Something went wrong!", Toast.LENGTH_LONG).show()
                         }
                     }
-
                 }
             }
         }
