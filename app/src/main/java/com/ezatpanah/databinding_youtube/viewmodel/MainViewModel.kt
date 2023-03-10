@@ -19,9 +19,9 @@ class MainViewModel @Inject constructor(private val repository: ApiRepository) :
     val newsList: LiveData<DataStatus<ResponseTopHeadline>>
         get() = _newsList
 
-    fun getTopHeadlineNews(country: String) = viewModelScope.launch {
+    fun getTopHeadlineNews() = viewModelScope.launch {
         _newsList.value = DataStatus.loading()
-        val response = repository.getTopHeadlineNews(country)
+        val response = repository.getTopHeadlineNews()
         _newsList.value = handleTopHeadlineNewsResponse(response)
     }
 

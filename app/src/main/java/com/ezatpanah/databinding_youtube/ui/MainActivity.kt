@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             binding.apply {
-                viewModel.getTopHeadlineNews("us")
+                viewModel.getTopHeadlineNews()
                 viewModel.newsList.observe(this@MainActivity) { data ->
                     when (data.status) {
                         DataStatus.Status.LOADING -> {
