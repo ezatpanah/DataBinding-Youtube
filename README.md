@@ -11,7 +11,8 @@ YouTube Video
 Screen-Shot :
 <br>
 <img alt="Ezatpanah Flow-Database-Youtube" src="screenshot/Screenshot_1678025956.png" width="20%">
-<img alt="Ezatpanah Flow-Database-Youtube" src="screenshot/Screenshot_1678025965.png" width="20%">
+<br>
+<img alt="Ezatpanah Flow-Database-Youtube" src="screenshot/Screenshot_1678025965.png" width="50%">
 
 Article on Medium:
 <br>
