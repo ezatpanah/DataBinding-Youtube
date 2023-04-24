@@ -4,7 +4,7 @@
 <br>
 YouTube Video 
 <br> 
-<a href="" target="_blank"><img alt="Ezatpanah DataBinding-Youtube" src="DataBinding-Cover.jpg" width="60%"></a>
+<a href="https://www.youtube.com/watch?v=k3X1aEyY9kg" target="_blank"><img alt="Ezatpanah DataBinding-Youtube" src="DataBinding-Cover.jpg" width="60%"></a>
 <br> 
 
 
@@ -16,7 +16,7 @@ Screen-Shot :
 
 Article on Medium:
 <br>
-
+https://medium.com/@ezatpanah/how-to-use-data-binding-in-kotlin-complete-guide-83af78a0bb30
 <br>
 
 ✨ Join Medium to read thousands of valuable stories ✨
